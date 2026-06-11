@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇮🇳 NSE 250 Stocks - Live Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .header-title h1 {
+            font-size: 28px;
+            color: #333;
+            margin: 0;
+        }
+
+        .header-title .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .header-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-label {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .info-value {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .controls {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .control-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        select, input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-card.buy {
+            border-left-color: #10b981;
+        }
+
+        .stat-card.sell {
+            border-left-color: #ef4444;
+        }
+
+        .stat-card.hold {
+            border-left-color: #f59e0b;
+        }
+
+        .stat-card h3 {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .stat-card .value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .table-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+
+        .table-header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .table-header h2 {
+            font-size: 18px;
+            color: #333;
+            margin: 0;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+            max-width: 400px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #f8f9fa;
+            position: sticky;
+            top: 0;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        tbody {
+            display: block;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        thead, tbody tr {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        .symbol {
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .signal {
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 12px;
+        }
+
+        .signal.strong-buy {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .signal.buy {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .signal.hold {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .signal.sell {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .signal.strong-sell {
+            background: #fecaca;
+            color: #7f1d1d;
+        }
+
+        .positive {
+            color: #10b981;
+        }
+
+        .negative {
+            color: #ef4444;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-title h1 {
+                font-size: 24px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 10px 8px;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .search-box {
+                max-width: 100%;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-title">
+                <h1>🇮🇳 NSE 250 Stocks Dashboard</h1>
+                <div class="subtitle">Real-time Daily Analysis & Predictions</div>
+            </div>
+            <div class="header-info">
+                <div class="info-item">
+                    <div class="info-label">Last Updated</div>
+                    <div class="info-value" id="lastUpdated">-</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Total Analyzed</div>
+                    <div class="info-value" id="totalAnalyzed">-</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="dateSelect">📅 Select Date:</label>
+                <select id="dateSelect" onchange="loadDate()">
+                    <option value="">Loading dates...</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="signalFilter">🎯 Filter Signal:</label>
+                <select id="signalFilter" onchange="filterTable()">
+                    <option value="">All Signals</option>
+                    <option value="STRONG BUY">🚀 Strong Buy</option>
+                    <option value="BUY">✅ Buy</option>
+                    <option value="HOLD">📌 Hold</option>
+                    <option value="SELL">⚠️ Sell</option>
+                    <option value="STRONG SELL">⛔ Strong Sell</option>
+                </select>
+            </div>
+
+            <button onclick="location.reload()">🔄 Refresh</button>
+            <button onclick="downloadCSV()">📥 Export CSV</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>📊 Total Stocks</h3>
+                <div class="value" id="statTotal">-</div>
+            </div>
+            <div class="stat-card buy">
+                <h3>🟢 Buy Signals</h3>
+                <div class="value" id="statBuy">-</div>
+            </div>
+            <div class="stat-card hold">
+                <h3>🟡 Hold Signals</h3>
+                <div class="value" id="statHold">-</div>
+            </div>
+            <div class="stat-card sell">
+                <h3>🔴 Sell Signals</h3>
+                <div class="value" id="statSell">-</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="table-header">
+                <h2>📈 Stock Analysis Results</h2>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search by symbol..." onkeyup="searchTable()">
+                </div>
+            </div>
+
+            <div id="loadingState" class="loading">
+                <div class="spinner"></div>
+                <p>Loading analysis data...</p>
+            </div>
+
+            <table id="stockTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">Symbol</th>
+                        <th style="width: 12%;">Price (₹)</th>
+                        <th style="width: 15%;">Signal</th>
+                        <th style="width: 12%;">Confidence</th>
+                        <th style="width: 10%;">RSI</th>
+                        <th style="width: 12%;">SMA 20</th>
+                        <th style="width: 13%;">Volume</th>
+                        <th style="width: 16%;">Daily Return</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <p>No data available. Please select a date or check back later.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🇮🇳 NSE 250 Stocks Dashboard | Updated daily after market close (4:15 PM IST) | Data from yfinance | Powered by GitHub Actions</p>
+        </div>
+    </div>
+
+    <script>
+        let allData = [];
+        let filteredData = [];
+
+        async function initialize() {
+            await loadAvailableDates();
+            const latestDate = document.getElementById('dateSelect').value;
+            if (latestDate) {
+                await loadDate();
+            }
+        }
+
+        async function loadAvailableDates() {
+            try {
+                const response = await fetch('https://api.github.com/repos/jayanta411/stock-market-automation/contents/data/daily_analysis');
+                const files = await response.json();
+
+                if (!Array.isArray(files)) {
+                    console.error('Failed to fetch dates');
+                    return;
+                }
+
+                const dates = files
+                    .filter(f => f.name.startsWith('analysis_') && f.name.endsWith('.json'))
+                    .map(f => f.name.replace('analysis_', '').replace('.json', ''))
+                    .sort()
+                    .reverse();
+
+                const dateSelect = document.getElementById('dateSelect');
+                dateSelect.innerHTML = '';
+
+                dates.forEach(date => {
+                    const option = document.createElement('option');
+                    option.value = date;
+                    option.textContent = formatDate(date);
+                    dateSelect.appendChild(option);
+                });
+
+                if (dates.length > 0) {
+                    dateSelect.value = dates[0];
+                }
+            } catch (error) {
+                console.error('Error loading dates:', error);
+            }
+        }
+
+        async function loadDate() {
+            const selectedDate = document.getElementById('dateSelect').value;
+            if (!selectedDate) return;
+
+            document.getElementById('loadingState').style.display = 'block';
+            document.getElementById('stockTable').style.display = 'none';
+            document.getElementById('emptyState').style.display = 'none';
+
+            try {
+                const url = `https://raw.githubusercontent.com/jayanta411/stock-market-automation/main/data/daily_analysis/analysis_${selectedDate}.json`;
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+
+                const data = await response.json();
+                allData = data.results.filter(r => !r.error);
+
+                document.getElementById('lastUpdated').textContent = formatDate(selectedDate);
+                document.getElementById('totalAnalyzed').textContent = allData.length;
+
+                updateStats();
+                displayTable(allData);
+
+                document.getElementById('loadingState').style.display = 'none';
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('loadingState').innerHTML = `
+                    <p style="color: #ef4444;">Failed to load data: ${error.message}</p>
+                    <p style="font-size: 12px; color: #999; margin-top: 10px;">Make sure the data/daily_analysis folder contains JSON files</p>
+                `;
+            }
+        }
+
+        function updateStats() {
+            const total = allData.length;
+            const buySigs = allData.filter(r => r.signal.includes('BUY')).length;
+            const holdSigs = allData.filter(r => r.signal.includes('HOLD')).length;
+            const sellSigs = allData.filter(r => r.signal.includes('SELL')).length;
+
+            document.getElementById('statTotal').textContent = total;
+            document.getElementById('statBuy').textContent = buySigs;
+            document.getElementById('statHold').textContent = holdSigs;
+            document.getElementById('statSell').textContent = sellSigs;
+        }
+
+        function displayTable(data) {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+
+            if (data.length === 0) {
+                document.getElementById('stockTable').style.display = 'none';
+                document.getElementById('emptyState').style.display = 'block';
+                return;
+            }
+
+            data.forEach(stock => {
+                const row = document.createElement('tr');
+                const rsi = stock.technical_metrics.rsi;
+                const returnVal = stock.technical_metrics.daily_return_pct;
+                const signalClass = stock.signal.toLowerCase().replace(/\s/g, '-').replace(/🚀|✅|📌|⚠️|⛔/g, '').trim();
+
+                row.innerHTML = `
+                    <td><span class="symbol">${stock.symbol}</span></td>
+                    <td>₹${stock.current_price.toFixed(2)}</td>
+                    <td><span class="signal ${signalClass}">${stock.signal}</span></td>
+                    <td>${(stock.confidence * 100).toFixed(1)}%</td>
+                    <td>${rsi.toFixed(1)}</td>
+                    <td>₹${stock.technical_metrics.sma_20.toFixed(2)}</td>
+                    <td>${formatVolume(stock.technical_metrics.volume)}</td>
+                    <td><span class="${returnVal > 0 ? 'positive' : 'negative'}">${returnVal > 0 ? '+' : ''}${returnVal.toFixed(2)}%</span></td>
+                `;
+                tbody.appendChild(row);
+            });
+
+            document.getElementById('stockTable').style.display = 'table';
+        }
+
+        function filterTable() {
+            const signalFilter = document.getElementById('signalFilter').value;
+            filteredData = allData.filter(stock => !signalFilter || stock.signal.includes(signalFilter));
+            displayTable(filteredData);
+        }
+
+        function searchTable() {
+            const searchTerm = document.getElementById('searchInput').value.toUpperCase();
+            filteredData = allData.filter(stock => stock.symbol.includes(searchTerm));
+            displayTable(filteredData);
+        }
+
+        function formatDate(dateStr) {
+            const [year, month, day] = dateStr.split('-');
+            const date = new Date(year, month - 1, day);
+            return date.toLocaleDateString('en-IN', { 
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric'
+            });
+        }
+
+        function formatVolume(volume) {
+            if (volume >= 1000000) {
+                return (volume / 1000000).toFixed(1) + 'M';
+            } else if (volume >= 1000) {
+                return (volume / 1000).toFixed(1) + 'K';
+            }
+            return volume.toFixed(0);
+        }
+
+        function downloadCSV() {
+            if (filteredData.length === 0 && allData.length === 0) {
+                alert('No data to export');
+                return;
+            }
+
+            const data = filteredData.length > 0 ? filteredData : allData;
+            const selectedDate = document.getElementById('dateSelect').value;
+
+            let csv = 'Symbol,Price (₹),Signal,Confidence (%),RSI,SMA 20,Volume,Daily Return (%)\n';
+
+            data.forEach(stock => {
+                csv += `${stock.symbol},${stock.current_price.toFixed(2)},${stock.signal},${(stock.confidence * 100).toFixed(1)},${stock.technical_metrics.rsi.toFixed(1)},${stock.technical_metrics.sma_20.toFixed(2)},${stock.technical_metrics.volume.toFixed(0)},${stock.technical_metrics.daily_return_pct.toFixed(2)}\n`;
+            });
+
+            const element = document.createElement('a');
+            element.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv));
+            element.setAttribute('download', `NSE_250_${selectedDate}.csv`);
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+
+        window.addEventListener('load', initialize);
+    </script>
+</body>
+</html>
