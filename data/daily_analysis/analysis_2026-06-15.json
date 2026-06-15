@@ -1,297 +1,9 @@
 {
-  "generated_at": "2026-06-15T03:46:46.919290",
-  "total_analyzed": 250,
+  "generated_at": "2026-06-15T16:11:09.452341",
+  "total_analyzed": 105,
   "results": [
     {
-      "ticker": "IDEA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IFCI.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "OLAELEC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "YESBANK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ZEEL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "MMTC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JPPOWER.NS",
-      "error": "Insufficient data"
-    },
-    {
       "ticker": "ASHOKLEY.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SUZLON.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TTML.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "GROWW.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IDFCFIRSTB.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "MAHABANK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "RPOWER.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HDFCBANK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ONGC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "PNB.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ADANIPOWER.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "MSUMI.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TATASTEEL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BANKBARODA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CANBK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "AEGISLOG.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ETERNAL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "INOXWIND.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TMCV.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "GMRAIRPORT.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "AIIL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IOC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "VEDL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ICICIBANK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "PINELABS.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NMDC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "KOTAKBANK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HSCL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SAGILITY.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NBCC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NHPC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HINDPETRO.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "WIPRO.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TEJASNET.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "UNIONBANK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SAMMAANCAP.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ITC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SWIGGY.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JIOFIN.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "MOTHERSON.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NYKAA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "RELIANCE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BAJFINANCE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "MEESHO.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BPCL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SBIN.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CENTRALBK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IRB.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NLCINDIA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BANDHANBNK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SAIL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "COALINDIA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IRFC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SHRIRAMFIN.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HINDALCO.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HFCL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BHEL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JSWCEMENT.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BANKINDIA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "FEDERALBNK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NTPC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "AXISBANK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IDBI.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "RBLBANK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BEL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "INFY.NS",
       "error": "Insufficient data"
     },
     {
@@ -299,27 +11,39 @@
       "error": "Insufficient data"
     },
     {
-      "ticker": "MRPL.NS",
+      "ticker": "NMDC.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "TMPV.NS",
+      "ticker": "VEDL.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "NATIONALUM.NS",
+      "ticker": "TATASTEEL.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "RVNL.NS",
+      "ticker": "ADANIPOWER.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "LTF.NS",
+      "ticker": "ONGC.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "ANGELONE.NS",
+      "ticker": "IOC.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "IDBI.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "PNB.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "RELIANCE.NS",
       "error": "Insufficient data"
     },
     {
@@ -327,103 +51,47 @@
       "error": "Insufficient data"
     },
     {
-      "ticker": "CUB.NS",
+      "ticker": "NTPC.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "OIL.NS",
+      "ticker": "ICICIBANK.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "PWL.NS",
+      "ticker": "BPCL.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "NSLNISP.NS",
+      "ticker": "KOTAKBANK.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "TATAPOWER.NS",
+      "ticker": "WIPRO.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "PGEL.NS",
+      "ticker": "SBIN.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "UCOBANK.NS",
+      "ticker": "BAJFINANCE.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "BHARTIARTL.NS",
+      "ticker": "BEL.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "PFC.NS",
+      "ticker": "ITC.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "POWERGRID.NS",
+      "ticker": "IRFC.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "EMMVEE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JAINREC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "KARURVYSYA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CROMPTON.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JBMA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "VMM.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JSWINFRA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "LEMONTREE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "INDUSTOWER.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IGL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IREDA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "DELHIVERY.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NETWEB.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "AEGISVOPAK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IOB.NS",
+      "ticker": "BANKBARODA.NS",
       "error": "Insufficient data"
     },
     {
@@ -431,79 +99,27 @@
       "error": "Insufficient data"
     },
     {
-      "ticker": "JMFINANCIL.NS",
+      "ticker": "TATAPOWER.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "AUBANK.NS",
+      "ticker": "HINDALCO.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "CGCL.NS",
+      "ticker": "UNIONBANK.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "HINDCOPPER.NS",
+      "ticker": "INFY.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "J&KBANK.NS",
+      "ticker": "BHEL.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "HUDCO.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "AWL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IEX.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ENGINERSIN.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SCI.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "LENSKART.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TRIDENT.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "M&M.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NTPCGREEN.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CHOLAFIN.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ATGL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BAJAJHFL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "MOTILALOFS.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "INDIANB.NS",
+      "ticker": "BHARTIARTL.NS",
       "error": "Insufficient data"
     },
     {
@@ -511,235 +127,7 @@
       "error": "Insufficient data"
     },
     {
-      "ticker": "ABCAPITAL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "PETRONET.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HINDZINC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BELRISE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HDFCLIFE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CGPOWER.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BSE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "AMBUJACEM.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ATHERENERG.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JYOTICNC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "INDHOTEL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JSWENERGY.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "DATAPATTNS.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "INDUSINDBK.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "RECLTD.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "PPLPHARMA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "DABUR.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "LICHSGFIN.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "INDIGO.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NCC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "APTUS.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "COFORGE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TECHM.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "GPIL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TVSMOTOR.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "PATANJALI.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NESTLEIND.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "VBL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "PARADEEP.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ADANIPORTS.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JUBLFOOD.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ADANIENT.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "MANAPPURAM.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "URBANCO.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SJVN.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "M&MFIN.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IIFL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ITCHOTELS.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HCLTECH.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "REDINGTON.NS",
-      "error": "Insufficient data"
-    },
-    {
       "ticker": "TCS.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "POONAWALLA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ABDL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "PNBHOUSING.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "LICI.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ANANTRAJ.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ABFRL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ADANIGREEN.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JINDALSAW.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "GMDCLTD.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "MCX.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "LODHA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CONCOR.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HONASA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "PAYTM.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JKTYRE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CYIENT.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "IRCON.NS",
       "error": "Insufficient data"
     },
     {
@@ -747,91 +135,27 @@
       "error": "Insufficient data"
     },
     {
-      "ticker": "DRREDDY.NS",
+      "ticker": "AUROPHARMA.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "ADANIENSOL.NS",
+      "ticker": "JINDALSTEL.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "CHOICEIN.NS",
+      "ticker": "HDFCLIFE.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "EXIDEIND.NS",
+      "ticker": "HCLTECH.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "TATATECH.NS",
+      "ticker": "ADANIGREEN.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "BAJAJFINSV.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CDSL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TATACAP.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TATACONSUM.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SBILIFE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TATAINVEST.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "UNOMINDA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SAREGAMA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TARIL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BLUEJET.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "UPL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ACMESOLAR.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "DEVYANI.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "WOCKPHARMA.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BLS.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "PIDILITIND.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ELECON.NS",
+      "ticker": "COFORGE.NS",
       "error": "Insufficient data"
     },
     {
@@ -839,11 +163,11 @@
       "error": "Insufficient data"
     },
     {
-      "ticker": "LAURUSLABS.NS",
+      "ticker": "LODHA.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "HYUNDAI.NS",
+      "ticker": "BAJAJFINSV.NS",
       "error": "Insufficient data"
     },
     {
@@ -851,115 +175,23 @@
       "error": "Insufficient data"
     },
     {
-      "ticker": "ASTERDM.NS",
+      "ticker": "TECHM.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "HINDUNILVR.NS",
+      "ticker": "NESTLEIND.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "APOLLOTYRE.NS",
+      "ticker": "PIDILITIND.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "PREMIERENE.NS",
+      "ticker": "AUBANK.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "TITAN.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "PCBL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HDFCAMC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "JSWSTEEL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "FIVESTAR.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ASIANPAINT.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SONATSOFTW.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NAUKRI.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "SBFC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CESC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CARTRADE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TITAGARH.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CHENNPETRO.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "GODREJCP.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "TATACHEM.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "FORTIS.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "RAILTEL.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "POLICYBZR.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HEXT.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "WELSPUNLIV.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "CAMS.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "ZENTEC.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "BHARATFORG.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "NAM-INDIA.NS",
+      "ticker": "CIPLA.NS",
       "error": "Insufficient data"
     },
     {
@@ -967,39 +199,227 @@
       "error": "Insufficient data"
     },
     {
-      "ticker": "HBLENGINE.NS",
-      "error": "Insufficient data"
-    },
-    {
-      "ticker": "HEG.NS",
-      "error": "Insufficient data"
-    },
-    {
       "ticker": "FSL.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "ZYDUSLIFE.NS",
+      "ticker": "HINDUNILVR.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "SHYAMMETL.NS",
+      "ticker": "GRAPHITE.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "SYRMA.NS",
+      "ticker": "MAXHEALTH.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "SAPPHIRE.NS",
+      "ticker": "SBILIFE.NS",
       "error": "Insufficient data"
     },
     {
-      "ticker": "AAVAS.NS",
+      "ticker": "FORTIS.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "OBEROIRLTY.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "GODREJCP.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "GPIL.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "DRREDDY.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "JSWSTEEL.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "BALRAMCHIN.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "HAVELLS.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "HAL.NS",
       "error": "Insufficient data"
     },
     {
       "ticker": "COCHINSHIP.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "EICHERMOT.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "GICRE.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "MAPMYINDIA.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "LUPIN.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "ASTERDM.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "GLENMARK.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "MARUTI.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "MPHASIS.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "PERSISTENT.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "MOIL.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "ICICIGI.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "DMART.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "COLPAL.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "CUMMINSIND.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "ULTRACEMCO.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "TORNTPOWER.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "MANKIND.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "SIEMENS.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "CHOLAHLDNG.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "APOLLOHOSP.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "THERMAX.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "RAMCOCEM.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "ABB.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "BRITANNIA.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "ESCORTS.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "DIVISLAB.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "SUNTV.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "JKCEMENT.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "ACC.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "IPCALAB.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "HEIDELBERG.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "SOBHA.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "HEALTHCARE.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "ALKEM.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "LTTS.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "BOSCHLTD.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "CERA.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "BASF.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "SHREECEM.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "PGHH.NS",
+      "error": "Insufficient data"
+    },
+    {
+      "ticker": "PAGEIND.NS",
       "error": "Insufficient data"
     }
   ]
